@@ -4,34 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- Google font cdn -->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
 <!-- font awesome cdn -->
-
- <!-- <script src="https://kit.fontawesome.com/201b902b72.js" crossorigin="anonymous"></script> -->
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+            <!-- Latest Font Awesome (v6) -->
+ <script src="https://kit.fontawesome.com/201b902b72.js" crossorigin="anonymous"></script>
+            <!-- Older font awesome -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> -->
 
  <!-- tailwind cdn -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-   <script>
+  <!-- OLDER VERSION of Tailwind -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+   <style type="text/tailwindcss">
+      @theme {
+        --font-manrope: "manrope", sans-serif;
+      }
+    </style>
+
+<!-- OLDER VERSION of Tailwind -->
+      <!-- <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            clifford: '#da373d',
+          fontFamily: {
+            manrope: ['Manrope', 'sans-serif'],
           }
         }
       }
     }
-  </script>
-    <!-- Latest Font Awesome (v6) -->
+  </script> -->
+
+    
 
 </head>
-<body>
+<body class="font-manrope">
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
         <!-- Header section -->
          <header class="lg:flex  pt-10 mb-20">
@@ -47,7 +59,7 @@
                 Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
              </p>
              <br>
-             <button class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold">Explore More <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i></button>
+             <button class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold">Explore More <i class="fas fa-arrow-right text-xl -rotate-45"></i></button>
             </div>
              <div class="relative">
                 <!-- image -->
@@ -58,7 +70,7 @@
                   <div class="absolute flex items-center bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-28 md:top-84 md:left-32 lg:left-16">
                     <!-- icon -->
                      <div>
-                        <i class="fa-solid fa-star text-2xl text-amber-500"></i>
+                        <i class="fas fa-star text-2xl text-amber-500"></i>
                      </div>
                      <!-- card-text -->
                       <div class="ml-2">
@@ -159,7 +171,7 @@
                       <img class="p-1" src="images/client.png" alt="">
                     </div>
                     <div class="px-8">
-                      <p class="text-gray-500 mb-5">
+                      <p class="text-gray-500 mb-5 mt-5">
                         We are providing the best and suitable home insurance services for the people who are interested to treatment
                       </p>
                       <h1 class="font-bold">Ilham Yuda</h1>
@@ -174,7 +186,7 @@
                       <img class="p-1" src="images/client.png" alt="">
                     </div>
                     <div class="px-8">
-                      <p class="text-gray-500 mb-5">
+                      <p class="text-gray-500 mb-5 mt-5">
                         We are providing the best and suitable home insurance services for the people who are interested to treatment
                       </p>
                       <h1 class="font-bold">Ilham Yuda</h1>
@@ -188,7 +200,7 @@
                       <img class="p-1" src="images/client.png" alt="">
                     </div>
                     <div class="px-8">
-                      <p class="text-gray-500 mb-5">
+                      <p class="text-gray-500 mb-5 mt-5">
                         We are providing the best and suitable home insurance services for the people who are interested to treatment
                       </p>
                       <h1 class="font-bold">Ilham Yuda</h1>
@@ -262,15 +274,15 @@
           </div>
           <!-- fourth coulmn -->
           <div>
-          <h2 class="font-bold text-2xl mb-3">Subscribe to our newaletter</h2>
+          <h2 class="font-bold text-2xl mb-3">Subscribe to our newsletter</h2>
           <div class="flex flex-col space-y-2">
             <div>
               <input placeholder="Email address" type="text" class="bg-transparent border-b-2 border-black w-4/6 md:w-5/6">
-              <i class="fa-solid fa-chevron-right w-4.5 h-4.5  bg-orange-600 rounded-full text-white justify-center items-center "></i>
+              <i class="fas fa-chevron-right w-5 h-5  bg-orange-600 rounded-full text-white justify-center items-center"></i>
               <div class="flex  w-1/3 mb-2 mt-8 justify-between">
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
               </div>
             </div>
           </div>
